@@ -1,13 +1,13 @@
-package com.vcs.LibraryManagementSystem;
+package com.vcs.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class LibraryManagementSystemApplication {
+@SpringBootApplication //(scanBasePackages = {"com.vcs.library.*"})
+public class LibraryManagementSystem {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LibraryManagementSystemApplication.class, args);
+		SpringApplication.run(LibraryManagementSystem.class, args);
 		System.out.println("Hello!!");
 	}
 
